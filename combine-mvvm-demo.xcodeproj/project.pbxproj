@@ -9,25 +9,45 @@
 /* Begin PBXBuildFile section */
 		8D0C4D9128807509001E3FCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0C4D9028807509001E3FCF /* AppDelegate.swift */; };
 		8D0C4D9328807509001E3FCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0C4D9228807509001E3FCF /* SceneDelegate.swift */; };
-		8D0C4D9528807509001E3FCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0C4D9428807509001E3FCF /* ViewController.swift */; };
+		8D0C4D9528807509001E3FCF /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0C4D9428807509001E3FCF /* QuoteViewController.swift */; };
 		8D0C4D9828807509001E3FCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D0C4D9628807509001E3FCF /* Main.storyboard */; };
 		8D0C4D9A2880750B001E3FCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D0C4D992880750B001E3FCF /* Assets.xcassets */; };
 		8D0C4D9D2880750B001E3FCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D0C4D9B2880750B001E3FCF /* LaunchScreen.storyboard */; };
+		8D0C4DAB28807CEE001E3FCF /* combine_mvvm_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0C4DAA28807CEE001E3FCF /* combine_mvvm_demoTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8D0C4DAC28807CEE001E3FCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D0C4D8528807509001E3FCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D0C4D8C28807509001E3FCF;
+			remoteInfo = "combine-mvvm-demo";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8D0C4D8D28807509001E3FCF /* combine-mvvm-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "combine-mvvm-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D0C4D9028807509001E3FCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D0C4D9228807509001E3FCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8D0C4D9428807509001E3FCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8D0C4D9428807509001E3FCF /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
 		8D0C4D9728807509001E3FCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D0C4D992880750B001E3FCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D0C4D9C2880750B001E3FCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D0C4D9E2880750B001E3FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D0C4DA828807CEE001E3FCF /* combine-mvvm-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "combine-mvvm-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D0C4DAA28807CEE001E3FCF /* combine_mvvm_demoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = combine_mvvm_demoTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8D0C4D8A28807509001E3FCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D0C4DA528807CEE001E3FCF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				8D0C4D8F28807509001E3FCF /* combine-mvvm-demo */,
+				8D0C4DA928807CEE001E3FCF /* combine-mvvm-demoTests */,
 				8D0C4D8E28807509001E3FCF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				8D0C4D8D28807509001E3FCF /* combine-mvvm-demo.app */,
+				8D0C4DA828807CEE001E3FCF /* combine-mvvm-demoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,13 +80,21 @@
 			children = (
 				8D0C4D9028807509001E3FCF /* AppDelegate.swift */,
 				8D0C4D9228807509001E3FCF /* SceneDelegate.swift */,
-				8D0C4D9428807509001E3FCF /* ViewController.swift */,
+				8D0C4D9428807509001E3FCF /* QuoteViewController.swift */,
 				8D0C4D9628807509001E3FCF /* Main.storyboard */,
 				8D0C4D992880750B001E3FCF /* Assets.xcassets */,
 				8D0C4D9B2880750B001E3FCF /* LaunchScreen.storyboard */,
 				8D0C4D9E2880750B001E3FCF /* Info.plist */,
 			);
 			path = "combine-mvvm-demo";
+			sourceTree = "<group>";
+		};
+		8D0C4DA928807CEE001E3FCF /* combine-mvvm-demoTests */ = {
+			isa = PBXGroup;
+			children = (
+				8D0C4DAA28807CEE001E3FCF /* combine_mvvm_demoTests.swift */,
+			);
+			path = "combine-mvvm-demoTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +117,24 @@
 			productReference = 8D0C4D8D28807509001E3FCF /* combine-mvvm-demo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		8D0C4DA728807CEE001E3FCF /* combine-mvvm-demoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D0C4DAE28807CEE001E3FCF /* Build configuration list for PBXNativeTarget "combine-mvvm-demoTests" */;
+			buildPhases = (
+				8D0C4DA428807CEE001E3FCF /* Sources */,
+				8D0C4DA528807CEE001E3FCF /* Frameworks */,
+				8D0C4DA628807CEE001E3FCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D0C4DAD28807CEE001E3FCF /* PBXTargetDependency */,
+			);
+			name = "combine-mvvm-demoTests";
+			productName = "combine-mvvm-demoTests";
+			productReference = 8D0C4DA828807CEE001E3FCF /* combine-mvvm-demoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +147,10 @@
 				TargetAttributes = {
 					8D0C4D8C28807509001E3FCF = {
 						CreatedOnToolsVersion = 13.4.1;
+					};
+					8D0C4DA728807CEE001E3FCF = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 8D0C4D8C28807509001E3FCF;
 					};
 				};
 			};
@@ -116,6 +168,7 @@
 			projectRoot = "";
 			targets = (
 				8D0C4D8C28807509001E3FCF /* combine-mvvm-demo */,
+				8D0C4DA728807CEE001E3FCF /* combine-mvvm-demoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +184,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8D0C4DA628807CEE001E3FCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -138,13 +198,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D0C4D9528807509001E3FCF /* ViewController.swift in Sources */,
+				8D0C4D9528807509001E3FCF /* QuoteViewController.swift in Sources */,
 				8D0C4D9128807509001E3FCF /* AppDelegate.swift in Sources */,
 				8D0C4D9328807509001E3FCF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8D0C4DA428807CEE001E3FCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D0C4DAB28807CEE001E3FCF /* combine_mvvm_demoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8D0C4DAD28807CEE001E3FCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D0C4D8C28807509001E3FCF /* combine-mvvm-demo */;
+			targetProxy = 8D0C4DAC28807CEE001E3FCF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8D0C4D9628807509001E3FCF /* Main.storyboard */ = {
@@ -334,6 +410,40 @@
 			};
 			name = Release;
 		};
+		8D0C4DAF28807CEE001E3FCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.combine-mvvm-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/combine-mvvm-demo.app/combine-mvvm-demo";
+			};
+			name = Debug;
+		};
+		8D0C4DB028807CEE001E3FCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.combine-mvvm-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/combine-mvvm-demo.app/combine-mvvm-demo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -351,6 +461,15 @@
 			buildConfigurations = (
 				8D0C4DA22880750B001E3FCF /* Debug */,
 				8D0C4DA32880750B001E3FCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D0C4DAE28807CEE001E3FCF /* Build configuration list for PBXNativeTarget "combine-mvvm-demoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D0C4DAF28807CEE001E3FCF /* Debug */,
+				8D0C4DB028807CEE001E3FCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
